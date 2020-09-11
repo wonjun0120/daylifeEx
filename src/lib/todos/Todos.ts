@@ -13,8 +13,12 @@ import {Model, Table, Column, HasMany} from 'sequelize-typescript';
 @Table({
     timestamps: false,  //createdAt updatedAt은 사용하지 않음
 })
-class User extends Model<User> {
+class Todo extends Model<Todo> {
+    @Column user_id!: number;
+    @Column parent!: number; 
     @Column name!: string;
-    @Column google_id!: string;
-    @Column keycode!: string;
+    @Column memo!: string;
+    @Column is_important!: boolean;
+    @Column is_done!: boolean;
+    @Column priority!: number;
 } 
