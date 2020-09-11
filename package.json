@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/wonjun0120/daylifeEx#readme",
   "devDependencies": {
+    "@types/bluebird": "^3.5.32",
     "@types/node": "^14.6.4",
     "@types/validator": "^13.1.0",
     "ts-node": "^9.0.0"
@@ -27,7 +28,9 @@
     "@types/express": "^4.17.8",
     "express": "^4.17.1",
     "mysql2": "^2.1.0",
+    "reflect-metadata": "^0.1.13",
     "sequelize": "^6.3.5",
-    "sequelize-cli": "^6.2.0"
+    "sequelize-cli": "^6.2.0",
+    "sequelize-typescript": "^1.1.0"
   }
 }
