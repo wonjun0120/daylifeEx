@@ -7,7 +7,7 @@ import {Sequelize} from 'sequelize-typescript';
 import { env } from 'process';
 
 export const seqeulize = new Sequelize({
-    database: 'daylifeTest',
+    database: 'daylifeDev',
     dialect: 'mysql',
     username: 'root',
     password: env.DATABASE_DEV_PASSWORD,

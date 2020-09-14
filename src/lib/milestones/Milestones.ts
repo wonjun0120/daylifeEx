@@ -8,8 +8,8 @@
  * priority: int
  */
 import {Model, Table, Column, HasMany, ForeignKey} from 'sequelize-typescript';
-import { User } from '../../lib/users/Users';
-import { Todo } from '../../lib/todos/Todos';
+import { User } from '../../__TestDB__/users/Users';
+import { Todo } from '../../__TestDB__/todos/Todos';
 
 @Table({
     timestamps: false,  //createdAt updatedAt은 사용하지 않음
