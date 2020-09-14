@@ -8,14 +8,24 @@
  * is_done: boolean
  * priority: int
  */
-import {Model, Table, Column, HasMany} from 'sequelize-typescript';
+import {Model, Table, Column, HasMany, ForeignKey} from 'sequelize-typescript';
+import { User } from '../../lib/users/Users';
+import { Milestone } from '../../lib/milestones/Milestones';
+import { Schedule } from '../../lib/schedules/Schedules';
 
 @Table({
     timestamps: false,  //createdAt updatedAt은 사용하지 않음
 })
 export class Todo extends Model<Todo> {
+    @ForeignKey(() => User)
     @Column user_id!: number;
-    @Column parent!: number; 
+
+    @ForeignKey(() => Milestone)
+    @Column mile_parent!: number; 
+
+    @ForeignKey(() => Schedule)
+    @Column schedule_parent!: number; 
+
     @Column name!: string;
     @Column memo!: string;
     @Column is_important!: boolean;
