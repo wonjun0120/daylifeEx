@@ -9,9 +9,9 @@
  * priority: int
  */
 import {Model, Table, Column, HasMany, ForeignKey} from 'sequelize-typescript';
-import { User } from '../../__TestDB__/users/Users';
-import { Milestone } from '../../__TestDB__/milestones/Milestones';
-import { Schedule } from '../../__TestDB__/schedules/Schedules';
+import { User } from '../users/Users';
+import { Milestone } from '../milestones/Milestones';
+import { Schedule } from '../schedules/Schedules';
 
 @Table({
     timestamps: false,  //createdAt updatedAt은 사용하지 않음

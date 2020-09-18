@@ -6,9 +6,9 @@
  * keycode: varchar  //구글 고유 코드
  */
 import {Model, Table, Column, HasMany} from 'sequelize-typescript';
-import { Schedule } from '../../__TestDB__/schedules/Schedules';
-import { Todo } from '../../__TestDB__/todos/Todos';
-import { Milestone } from '../../__TestDB__/milestones/Milestones';
+import { Schedule } from '../schedules/Schedules';
+import { Todo } from '../todos/Todos';
+import { Milestone } from '../milestones/Milestones';
 
 @Table({
     timestamps: false,  //createdAt updatedAt은 사용하지 않음

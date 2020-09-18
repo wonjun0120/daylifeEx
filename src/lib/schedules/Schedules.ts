@@ -7,8 +7,8 @@
  * end: varchar
  */
 import {Model, Table, Column, HasMany, BelongsTo, ForeignKey} from 'sequelize-typescript';
-import { User } from '../../__TestDB__/users/Users';
-import { Todo } from '../../__TestDB__/todos/Todos';
+import { User } from '../users/Users';
+import { Todo } from '../todos/Todos';
 
 @Table({
     timestamps: false,  //createdAt updatedAt은 사용하지 않음
